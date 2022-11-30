@@ -122,7 +122,7 @@ a {
       &.active {
         color: #fff;
         // background: linear-gradient(to bottom, #f98585 0%, #ca3f3f 100%);
-        border-bottom: 4px red solid;
+        border-bottom: 4px rgba(0, 102, 255, 1) solid;
       }
       // &:first-child {
       //   border-top-left-radius: 10px;
@@ -148,8 +148,9 @@ a {
     color: #585858;
     letter-spacing: 0.4px;
     padding: 10px;
-    border-radius: 6px;
+    border-radius: 15px;
     width: 100%;
+    margin-bottom: 10px;
   }
 
   .popup-label {
@@ -166,7 +167,7 @@ a {
     padding: 10px 20px;
     font-size: 14px;
     color: #fff;
-    background: red;
+    background: rgba(0, 102, 255, 1);
     border-radius: 2rem;
     cursor: pointer;
   }

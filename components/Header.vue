@@ -40,25 +40,25 @@
                         </div>
                         <div class="tab-content" v-show="activeTab == 1" key="2">
                             <b-row>
-                                <b-col cols="3" lg="3" xl="3" class="dis-colum-center">
-                                    <label class="popup-label">ชื่อ สกุล *:</label>
-                                    <input type="text" class="popup-input" v-model="contactName" @keyup="isLetter" />
-                                </b-col>
-                                <b-col cols="3" lg="3" xl="3" class="dis-colum-center">
-                                    <label class="popup-label">อีเมล์ *:</label>
-                                    <input type="email" class="popup-input" v-model="contactEmail" @keyup="isEmail" />
-                                </b-col>
-                                <b-col cols="3" lg="3" xl="3" class="dis-colum-center">
-                                    <label class="popup-label">ไอดีไลน์ *:</label>
-                                    <input type="text" class="popup-input" v-model="contactLine" @keyup="isline" />
-                                </b-col>
-                                <b-col cols="3" lg="3" xl="3" class="dis-colum-center">
-                                    <label class="popup-label">เบอร์โทรศัพท์</label>
-                                    <input type="text" :maxlength="max" class="popup-input" v-model="contactPhone" @keyup="isNum" />
+                                <b-col cols="12" lg="12" xl="12" class="dis-colum-center">
+                                    <!-- <label class="popup-label">ชื่อ สกุล *:</label> -->
+                                    <input type="text" class="popup-input" v-model="contactName" @keyup="isLetter"  placeholder="ชื่อ สกุล *"/>
                                 </b-col>
                                 <b-col cols="12" lg="12" xl="12" class="dis-colum-center">
-                                    <label class="popup-label">รายละเอียด</label>
-                                    <input type="text" :maxlength="maxserch" class="popup-input" style="height: 150px" v-model="contactDetail" @keyup="isLetter" />
+                                    <!-- <label class="popup-label">อีเมล์ *:</label> -->
+                                    <input type="email" class="popup-input" v-model="contactEmail" @keyup="isEmail" placeholder="อีเมล์ *"/>
+                                </b-col>
+                                <b-col cols="12" lg="12" xl="12" class="dis-colum-center">
+                                    <!-- <label class="popup-label">ไอดีไลน์ *:</label> -->
+                                    <input type="text" class="popup-input" v-model="contactLine" @keyup="isline" placeholder="ไอดีไลน์ *"/>
+                                </b-col>
+                                <b-col cols="12" lg="12" xl="12" class="dis-colum-center">
+                                    <!-- <label class="popup-label">เบอร์โทรศัพท์</label> -->
+                                    <input type="text" :maxlength="max" class="popup-input" v-model="contactPhone" @keyup="isNum" placeholder="เบอร์โทรศัพท์ *"/>
+                                </b-col>
+                                <b-col cols="12" lg="12" xl="12" class="dis-colum-center">
+                                    <!-- <label class="popup-label">รายละเอียด</label> -->
+                                    <input type="text" :maxlength="maxserch" class="popup-input" style="height: 150px" v-model="contactDetail" @keyup="isLetter" placeholder="รายละเอียด *"/>
                                 </b-col>
                             </b-row>
                             <div class="text-center">

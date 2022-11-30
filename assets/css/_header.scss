@@ -140,7 +140,7 @@
   color: #fff;
   text-align: left;
   list-style: none;
-  background-color: #000;
+  background-color: rgba(38, 38, 38, 1);
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
@@ -163,7 +163,7 @@
     padding: 0.25rem 1.5rem;
     clear: both;
     font-weight: 400;
-    color: #fff;
+    color: rgb(134, 134, 134);
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
@@ -183,8 +183,8 @@
 
     &.nuxt-link-exact-active,
     &:hover {
-      color: #000;
-      background-color: #fff;
+      color: white;
+      // background-color: #fff;
     }
   }
 }

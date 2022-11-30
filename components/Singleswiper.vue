@@ -77,18 +77,5 @@ export default {
     color: white;
 }
 
-.des {
-    font-size: 12px;
-    line-height: 30px;
-    white-space: break-spaces;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    width: 70%;
-    position: relative;
-    z-index: 5;
-    /* top: 45%; */
-    left: 0;
-    padding: 10px;
-    color: white;
-}
+
 </style>
