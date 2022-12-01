@@ -24,7 +24,7 @@
               <Banner />
             <div class="footer-text">
                 <div class="footer-title">{{ slogan }}</div>
-                <div class="footer-content">{{ descriptionFooter }}</div>
+                  <div class="footer-content" v-html="descriptionFooter"></div>
             </div>
         </b-container>
         <Footer />
