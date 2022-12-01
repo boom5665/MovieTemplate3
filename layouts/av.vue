@@ -11,12 +11,7 @@
         <div class="full-category-line"></div>
         <b-container>
             <b-row>
-                <b-col cols="12" md="3" lg="2">
-                    <div class="d-none d-sm-block">
-                        <CategoryList _type="av" />
-                    </div>
-                </b-col>
-                <b-col cols="12" md="9" lg="10">
+                <b-col cols="12" md="12" lg="12">
                     <Nuxt />
                 </b-col>
             </b-row>
