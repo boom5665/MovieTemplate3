@@ -2,7 +2,7 @@
     <div>
         <b-container>
             <Header :_isAV="true" />
-            <Banner />
+
             <div class="text-center">
                 <h2 class="web-title">devmovie</h2>
                 <h3 class="web-slogan">{{ slogan }}</h3>
@@ -17,9 +17,10 @@
             </b-row>
             <div class="footer-text">
                 <div class="footer-title">{{ slogan }}</div>
-           <div class="footer-content" v-html="descriptionFooter"></div>
+                <div class="footer-content" v-html="descriptionFooter"></div>
             </div>
         </b-container>
+        <Banner />
         <Footer />
         <div class="footer-ads-container" v-show="showAds" v-if="adsBottom.length > 0">
             <div class="inner-container">
