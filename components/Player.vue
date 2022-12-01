@@ -11,7 +11,7 @@
                             <iframe id="playervideo" :src="playerIframeUrl" allowfullscreen="allowfullscreen" style="width: 100%; height: 100%; border: 0px; overflow: hidden"></iframe>
                             <AdsVideo :_adsArray="adsVideoList" v-model="isShowAds" v-if="adsVideoList.length > 0 && isShowAds" />
                         </div> -->
-                        <div class="iframe-container" style="z-index: 0 cursor: pointer;" @click="Movie()">
+                        <div class="iframe-container" style="z-index: 0 ; cursor: pointer;" @click="Movie()">
                             <nuxt-img format="webp" src="/playtem.png" alt="loader" />
                         </div>
                     </b-aspect>
