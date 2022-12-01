@@ -4,7 +4,7 @@ export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
     server: {
         port: 8004, // default: 3000
-        host: '0.0.0.0'
+        // host: '0.0.0.0'
     },
     head: {
         title: "devmovie",

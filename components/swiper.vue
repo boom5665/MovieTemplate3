@@ -36,11 +36,11 @@ export default {
             const self = this;
             this.loadingList = true;
             this.$axios
-                .$post("moviehot", {
+                .$get("movie/poster", {
                 })
                 .then(function (response) {
                     if (response.code == 200) {
-                        // console.log(response.result);
+                        console.log(response.result);
                         self.movieList = response.result;
                         self.maxPage = response.page_total;
                     }
