@@ -12,6 +12,7 @@
         <div @mouseover="onOver" @mouseleave="onLeave">
             <b-dropdown id="dropdown-1" text="หมวดหมู่" class="m-md-2 dropdown">
                 <b-dropdown-item :to="'/' + _type + '/category/' + value.name_slug" class="category-single drop-con" v-for="(value, index) in categories" :key="'cate' + index">
+
                     <span>{{ value.name_th }}</span>
                 </b-dropdown-item>
             </b-dropdown>

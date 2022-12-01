@@ -5,15 +5,15 @@
 
             <div class="poster-overlay">
                 <!-- <div class="rating" v-show="_obj.ratescore">{{ score ? score : _obj.ratescore }}</div> -->
-                <b-icon-play-circle class="poster-play" />
-
+                <!-- <b-icon-play-circle class="poster-play" /> -->
+                <nuxt-img format="webp" src="/play.png" alt="loader" />
                 <!-- <div class="title">{{ _obj.full_name }}</div> -->
             </div>
         </div>
 
         <div class="d-flex align-items-center dis-group">
             <div class="resolution">{{ _obj.quality }}</div>
-            <div class="sound flex-grow-1" >{{ _obj.sound_main ? _obj.sound_main : "NOSUB" }}</div>
+            <div class="sound flex-grow-1">{{ _obj.sound_main ? _obj.sound_main : "NOSUB" }}</div>
             <div class="resolution resolution-2">{{ score ? score : _obj.ratescore }}</div>
         </div>
         <div class="title">{{ _obj.full_name }}</div>
@@ -55,5 +55,4 @@ export default {
     background: #000;
     border-radius: 0px 0px 10px 10px;
 }
-
 </style>

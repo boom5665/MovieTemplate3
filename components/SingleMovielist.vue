@@ -5,8 +5,8 @@
 
             <div class="poster-overlay">
                 <!-- <div class="rating" v-show="_obj.ratescore">{{ score ? score : _obj.ratescore }}</div> -->
-                <b-icon-play-circle class="poster-play" />
-
+                <!-- <b-icon-play-circle class="poster-play" /> -->
+                <nuxt-img format="webp" src="/play.png" alt="loader" />
                 <!-- <div class="title">{{ _obj.full_name }}</div> -->
             </div>
         </div>
