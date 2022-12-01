@@ -3,10 +3,10 @@
         <b-container>
             <Header />
 
-            <div class="text-center">
+            <!-- <div class="text-center">
                 <h2 class="web-title">MOVIE</h2>
                 <h3 class="web-slogan">{{ slogan }}</h3>
-            </div>
+            </div> -->
             <!-- <Poster /> -->
         </b-container>
         <!-- <div class="full-category-line">

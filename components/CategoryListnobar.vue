@@ -31,7 +31,7 @@ export default {
         _type: {
             type: String,
             required: false,
-            default: "av",
+            default: "movie",
         },
     },
     data() {
