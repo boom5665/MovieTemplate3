@@ -5,7 +5,7 @@
                 <b-nav-item class="menu-btn"><CategoryListnobar :_isAV="true" /></b-nav-item>
             </b-navbar-nav> -->
 
-            <b-navbar-brand to="/"><nuxt-img format="webp" :src="logo" height="40" width="155" :alt="SEOTitle" /></b-navbar-brand>
+            <b-navbar-brand to="/"><nuxt-img format="webp" :src="logo" height="50" width="250" :alt="SEOTitle" /></b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" v-model="isCollapseOpen" is-nav>
                 <b-navbar-nav class="menu-list" style="align-items: center;">
