@@ -3,7 +3,7 @@
         <h2 class="list-title">{{ _isSearch ? " : " + _search : "" }}</h2>
         <div class="dis-between">
             <h2 class="list-title">หนังมาแรง</h2>
-            <h5 class="" style="color: #868686;">หนังที่มาแรงในตอนนี้</h5>
+            <h5 class="" style="color: #868686;">หนังที่มาแรงในตอนนี้ </h5>
         </div>
         <swiper />
         <div class="" v-if="movieList.length">
