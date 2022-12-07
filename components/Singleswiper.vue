@@ -1,11 +1,13 @@
 <template>
-    <nuxt-link :to="getPlayUrl(_obj)" class="single-movie-block">
+    <div class="single-movie-block">
         <div class="poster-container">
             <nuxt-img class="poster" :loading="_fetchMode" :src="_obj.imageslide" height="1000" :alt="_obj.full_name" />
 
             <div class="poster-overlay">
+                <nuxt-link :to="getPlayUrl(_obj)">
+                    <nuxt-img  format="webp" src="/play.png" alt="loader" class="img-play" />
+                </nuxt-link>
                 <!-- <div class="rating" v-show="_obj.ratescore">{{ score ? score : _obj.ratescore }}</div> -->
-                <!-- <b-icon-play-circle class="poster-play" /> -->
                 <div class="title">{{ _obj.full_name }}</div>
                 <div class="des">{{ _obj.description }}</div>
             </div>
@@ -16,7 +18,7 @@
             <div class="sound flex-grow-1" v-show="_obj.sound_main">เสียง : {{ _obj.sound_main }}</div>
             <div class="view"><b-icon-eye class="view-icon" /> {{ _obj.view }}</div>
         </div> -->
-    </nuxt-link>
+    </div>
 </template>
 
 <script>
@@ -49,7 +51,7 @@ export default {
 };
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
 .poster {
     height: 500px !important;
 }
@@ -76,6 +78,16 @@ export default {
     padding: 10px;
     color: white;
 }
-
-
+.img-play {
+    top: 40%;
+    position: absolute;
+    left: 47%;
+    width: 70px;
+    @media screen and (max-width: 576px) {
+        top: 30%;
+        position: absolute;
+        left: 40%;
+        width: 70px;
+    }
+}
 </style>
